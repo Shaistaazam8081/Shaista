@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <!--   <h1>hello dosto</h1> -->
+    <form action="" id="form">
+        <div>
+            <label for="name"> name</label>
+            <input type="text" id="username" placeholder="Enter ur username">
+            <span class="error-message" style="color: red;"></span>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter ur email">
+        </div>
+        <div>
+            <label for="password"> password</label>
+            <input type="text" id="password" placeholder="Enter ur password">
+            <span class="error-message" style="color: red;"></span>
+        </div>
+        <p id="password-hint" class="hidden">must be at least 8 characters</p>
+        <br>
+          
+         <div>
+            <label for="bio"> bio : </label>
+            <textarea name="bio" id="bio" placeholder=" write about urself"></textarea>
+            <p id="char-count">150 characters remaining </p>
+         </div>
+
+         <div>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox"> I agree to the terms and conditions</label>
+        </div>
+     <br>
+        <div>
+            <label for="country"> select ur country</label>
+            <select name="country" id="country">
+                <option value="india">india</option>
+                <option value="switzerland">switzerland</option>
+                <option value="england">england</option>
+            </select>
+        </div>
+        <br>
+        <button type="submit" id="btn">Login</button>
+    </form>
+    
+    <h1 class="hidden">account created successfully</h1>
+    <script src="index.js"></script>
+</body>
+</html>
