@@ -148,10 +148,13 @@ let data = [
 
 displayMovies(data);
 
-hamburger.addEventListener("click", (e) => {
-e.stopPropagation();
-options.classList.toggle("hidden")
-})
+if (hamburger && options) {
+    hamburger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        options.classList.toggle("hidden");
+        options.classList.toggle("flex");
+    });
+}
 
 
 
